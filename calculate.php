@@ -19,10 +19,10 @@ function calc_distance($lat1, $lng1, $lat2, $lng2) {
   $cos_lat_2 = cos($rad_lat_2);
   $cos_lng = cos($rad_lng);
 
-  //Lei dos cossenos
+  //alpha = sin1 * sin2 + cos1 + cos2  * cos theta (em radianos)
   $distance = $sen_lat_1 * $sen_lat_2 + $cos_lat_1 * $cos_lat_2 * $cos_lng;
 
-  //Invere  o valor (reverte o cos)
+  //Inverte  o valor (reverte o cos)
   $distance_rev = acos($distance);
 
   //converte a reversao para radianos do cosseno em graus
@@ -68,3 +68,5 @@ foreach ($coords as $lat => $lng) {
 }
 
 print_r($rs);
+
+//https://paginas.fe.up.pt/~ee99067/docs/Distancias.pdf
