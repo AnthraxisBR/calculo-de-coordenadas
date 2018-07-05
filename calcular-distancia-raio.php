@@ -2,7 +2,7 @@
 //Calcular com a lei dos cossenos
 function calc_distance($lat1, $lng1, $lat2, $lng2) {
 
-  //DiferenÁa entra as longitudes
+  //Diferen√ßa entra as longitudes
   $theta = $lng1 - $lng2;
 
   //Pegando os radianos
@@ -54,7 +54,7 @@ $coords = [
   "-25.4171615" => "-49.34963860000001",
   "-25.467903"  => "-49.28113399999999"
 ];
-//Distancia m·xima
+//Distancia m√°xima
 $max_distance_metters = 10000;
 $rs = [];
 
